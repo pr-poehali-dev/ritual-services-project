@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Phone, Mail, MapPin, Clock } from "lucide-react";
+import { storeInfo } from "@/data/services";
 
 const ContactForm = () => {
   const [name, setName] = useState("");
@@ -75,20 +76,22 @@ const ContactForm = () => {
           </CardDescription>
         </CardHeader>
         <CardContent className="space-y-4">
-          <div className="flex items-start space-x-3">
-            <Phone className="h-5 w-5 text-primary shrink-0 mt-0.5" />
-            <div>
-              <h4 className="font-medium">Телефон</h4>
-              <p className="text-sm text-muted-foreground">8 (800) 123-45-67 (круглосуточно)</p>
-              <p className="text-sm text-muted-foreground">8 (495) 123-45-67</p>
+          {storeInfo.phones.map((phoneInfo, index) => (
+            <div key={index} className="flex items-start space-x-3">
+              <Phone className="h-5 w-5 text-primary shrink-0 mt-0.5" />
+              <div>
+                <h4 className="font-medium">Телефон</h4>
+                <p className="text-sm text-muted-foreground">{phoneInfo.number}</p>
+                <p className="text-sm text-muted-foreground">{phoneInfo.schedule}</p>
+              </div>
             </div>
-          </div>
+          ))}
           
           <div className="flex items-start space-x-3">
             <Mail className="h-5 w-5 text-primary shrink-0 mt-0.5" />
             <div>
               <h4 className="font-medium">Email</h4>
-              <p className="text-sm text-muted-foreground">info@ritual-service.ru</p>
+              <p className="text-sm text-muted-foreground">{storeInfo.email}</p>
             </div>
           </div>
           
@@ -96,7 +99,7 @@ const ContactForm = () => {
             <MapPin className="h-5 w-5 text-primary shrink-0 mt-0.5" />
             <div>
               <h4 className="font-medium">Адрес</h4>
-              <p className="text-sm text-muted-foreground">г. Москва, ул. Ритуальная, д. 1</p>
+              <p className="text-sm text-muted-foreground">{storeInfo.address}</p>
             </div>
           </div>
           
@@ -104,7 +107,7 @@ const ContactForm = () => {
             <Clock className="h-5 w-5 text-primary shrink-0 mt-0.5" />
             <div>
               <h4 className="font-medium">Режим работы</h4>
-              <p className="text-sm text-muted-foreground">Круглосуточно, без выходных</p>
+              <p className="text-sm text-muted-foreground">{storeInfo.workHours}</p>
             </div>
           </div>
         </CardContent>

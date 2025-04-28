@@ -58,9 +58,18 @@ export const burialsFeatures = [
 
 export const storeInfo = {
   address: "ул. Примерная, 123",
-  phone: "8-910-644-0708",
+  phones: [
+    {
+      number: "+7 (910) 644-07-06",
+      schedule: "Круглосуточно"
+    },
+    {
+      number: "+7 (910) 644-07-08",
+      schedule: "Круглосуточно"
+    }
+  ],
   email: "kir.mila@mail.ru",
-  workHours: "Круглосуточно",
+  workHours: "вт-пт 08:00–17:00; сб,вс 08:00–14:00",
   additionalServices: [
     "Благоустройство мест захоронения",
     "Изготовление и установка памятников и оградок",

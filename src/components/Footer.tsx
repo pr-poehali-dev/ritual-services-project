@@ -1,3 +1,5 @@
+import { storeInfo } from "@/data/services";
+
 const Footer = () => {
   return (
     <footer className="bg-primary text-primary-foreground py-8">
@@ -12,15 +14,19 @@ const Footer = () => {
           
           <div>
             <h3 className="text-lg font-bold mb-3">Контакты</h3>
-            <p className="text-sm opacity-80 mb-1">г. Москва, ул. Ритуальная, д. 1</p>
-            <p className="text-sm opacity-80 mb-1">Телефон: 8 (800) 123-45-67</p>
-            <p className="text-sm opacity-80">Email: info@ritual-service.ru</p>
+            <p className="text-sm opacity-80 mb-1">{storeInfo.address}</p>
+            {storeInfo.phones.map((phoneInfo, index) => (
+              <p key={index} className="text-sm opacity-80 mb-1">
+                {phoneInfo.number} ({phoneInfo.schedule})
+              </p>
+            ))}
+            <p className="text-sm opacity-80">Email: {storeInfo.email}</p>
           </div>
           
           <div>
             <h3 className="text-lg font-bold mb-3">Режим работы</h3>
             <p className="text-sm opacity-80">
-              Круглосуточно, без выходных и праздничных дней
+              {storeInfo.workHours}
             </p>
           </div>
         </div>
