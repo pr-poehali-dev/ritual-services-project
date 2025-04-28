@@ -2,19 +2,19 @@ export const mainServices = [
   {
     title: "Организация похорон",
     description: "Полный комплекс услуг по организации похорон. Профессиональная помощь в трудную минуту.",
-    imageUrl: "https://images.unsplash.com/photo-1595212483088-20cca41c158a?q=80&w=600&auto=format&fit=crop",
+    imageUrl: "https://cdn.poehali.dev/files/93e258b2-6c72-49f4-a6f8-a88b44f5888f.jpg",
     link: "#services"
   },
   {
     title: "Памятники",
     description: "Изготовление и установка памятников из гранита, мрамора и других материалов. Индивидуальный дизайн.",
-    imageUrl: "https://images.unsplash.com/photo-1567705232329-9ebd11a01462?q=80&w=600&auto=format&fit=crop",
+    imageUrl: "https://cdn.poehali.dev/files/4cf85267-ae0e-4e64-8c2c-28e76266a98c.jpg",
     link: "#monuments"
   },
   {
     title: "Венки и цветы",
     description: "Большой выбор ритуальных венков и цветочных композиций для церемонии прощания.",
-    imageUrl: "https://images.unsplash.com/photo-1605126914174-6eb1bff470ec?q=80&w=600&auto=format&fit=crop",
+    imageUrl: "https://cdn.poehali.dev/files/09f0b69b-0a82-4d33-932a-4c88175e6136.jpg",
     link: "#wreaths"
   }
 ];
@@ -22,34 +22,49 @@ export const mainServices = [
 export const monuments = [
   {
     title: "Гранитные памятники",
-    description: "Долговечные памятники из гранита различных цветов и форм. Возможность художественного оформления.",
-    imageUrl: "https://images.unsplash.com/photo-1599820239365-4c756e72dba3?q=80&w=600&auto=format&fit=crop",
+    description: "Долговечные памятники из габбро и других видов гранита различных цветов и форм. Возможность художественного оформления, гравировки портретов и надписей.",
+    imageUrl: "https://cdn.poehali.dev/files/4cf85267-ae0e-4e64-8c2c-28e76266a98c.jpg",
     link: "#monuments"
   },
   {
-    title: "Мраморные памятники",
-    description: "Элегантные памятники из мрамора. Изысканный внешний вид и индивидуальные решения.",
-    imageUrl: "https://images.unsplash.com/photo-1598713323196-8b6b76fa28b5?q=80&w=600&auto=format&fit=crop",
+    title: "Комплексы и ограды",
+    description: "Изготовление и установка комплексов с основанием, благоустройство мест захоронения, установка оград.",
+    imageUrl: "https://cdn.poehali.dev/files/98d529c3-802b-49a2-948c-5027f48edf88.jpg",
     link: "#monuments"
   },
   {
-    title: "Комплексное благоустройство",
-    description: "Установка памятников, оград, плитки, столиков и лавочек. Создание цветников и озеленение.",
-    imageUrl: "https://images.unsplash.com/photo-1603969879348-16155f49c595?q=80&w=600&auto=format&fit=crop",
+    title: "Гробы и ритуальные принадлежности",
+    description: "Гробы различных моделей, включая элитные модели с атласной отделкой. Кресты, таблички и другие принадлежности для похорон.",
+    imageUrl: "https://cdn.poehali.dev/files/93e258b2-6c72-49f4-a6f8-a88b44f5888f.jpg",
     link: "#monuments"
   }
 ];
 
 export const wreathsFeatures = [
-  "Ритуальные венки любых размеров",
+  "Ритуальные венки различных форм и размеров",
+  "Венки в форме капли, сердца, круга",
   "Живые и искусственные цветочные композиции",
-  "Индивидуальный дизайн",
+  "Широкая цветовая гамма",
   "Доставка в любую точку города"
 ];
 
 export const burialsFeatures = [
-  "Подготовка места захоронения",
-  "Оформление документов",
+  "Полное сопровождение процесса захоронения",
+  "Оформление всех необходимых документов",
   "Ритуальный транспорт",
-  "Организация прощания"
+  "Организация прощальной церемонии",
+  "Круглосуточная поддержка"
 ];
+
+export const storeInfo = {
+  address: "ул. Примерная, 123",
+  phone: "8-910-644-0708",
+  email: "kir.mila@mail.ru",
+  workHours: "Круглосуточно",
+  additionalServices: [
+    "Благоустройство мест захоронения",
+    "Изготовление и установка памятников и оградок",
+    "Услуги по погребению",
+    "Ритуальные принадлежности"
+  ]
+};
