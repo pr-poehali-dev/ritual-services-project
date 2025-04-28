@@ -57,7 +57,7 @@ export const burialsFeatures = [
 ];
 
 export const storeInfo = {
-  address: "ул. Примерная, 123",
+  address: "г. Ряжск, ул. Владимировка, 4Б",
   phones: [
     {
       number: "+7 (910) 644-07-06",
